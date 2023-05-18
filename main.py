@@ -36,7 +36,7 @@ typing = ["fast", "speed", "typing", 'keyboard', "switches", "quick", "type"]
 
 banned = ["frig", "shiz", "sad", "fudge", "gun", "nerd", "geek"]
 
-Max = ["max", "weird", "bird", "freak", "mux", "straus"]
+Max = ["max", "weird", "bird", "freak", "mux", "straus", "sam", "frodo"]
 
 greetings = ["Hi", "hi", "hello", "sup", "whats good", "whats up", "wya"]
 
