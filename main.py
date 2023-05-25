@@ -72,9 +72,9 @@ async def wave(ctx, arg):
 @bot.event
 async def on_ready():
     print("Holy smokes I'm logged in to Discord as {0.user}! Get ready for extreme moderation.".format(bot))
-    channel = bot.get_channel(1102412567659425835)
+    channel = bot.get_channel(xxxxxxxxxxxxxxxxxxx)
     await channel.send(
-        "Holy freakin' smokes I'm logged in to Discord as {0.user}! Get ready for extreme moderation.".format(bot))
+        "Holy smokes I'm logged in to Discord as {0.user}! Get ready for extreme moderation.".format(bot))
 
 
 @bot.event
