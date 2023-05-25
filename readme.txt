@@ -26,7 +26,7 @@ DISCORD_TOKEN=
 3) Make sure that you do not share this .env file with anyone unless they you want them to be able to manipulate the bot's actions as well. 
 	Note: if you post this file or the token anywhere online, Discord will automatically and immediately change your token and you will have to repeat step 2.
 
-
+4) On like 75 change "channel = bot.get_channel(xxxxxxxxxxxxxxxxxxxx)" to the channel ID of the chat server that you want the bot to alert when it comes online. You can find this by going into settings --> advanced --> Developer Mode = On. Then finding the channel you want it to go to, right click on it and then click on "copy channel ID". 
 
 
 FFMPEG GUIDE:
