@@ -88,7 +88,7 @@ async def on_message(message):
     # If a user mentions the bot #
     if bot.user.mentioned_in(message):
         await message.channel.send(
-            f"Hello {user.mention}! How are you doing today? Want me to play some music? Just type $play followed by a "
+            f"Hello {user.mention}! How are you doing today? Want me to play some music? Just type !play followed by a "
             "space and a YouTube link to the media you want to hear!")
 
     # If a user talks about Thomas #
