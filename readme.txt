@@ -28,13 +28,13 @@ DISCORD_TOKEN=
 3) Make sure that you do not share this .env file with anyone unless they you want them to be able to manipulate the bot's actions as well. 
 	Note: if you post this file or the token anywhere online, Discord will automatically and immediately change your token and you will have to repeat step 2.
 
-4) On like 75 change "channel = bot.get_channel(xxxxxxxxxxxxxxxxxxxx)" to the channel ID of the chat server that you want the bot to alert when it comes online. You can find this by going into settings --> advanced --> Developer Mode = On. Then finding the channel you want it to go to, right click on it and then click on "copy channel ID". 
+4) On line 75 change "channel = bot.get_channel(xxxxxxxxxxxxxxxxxxxx)" to the channel ID of the chat server that you want the bot to alert when it comes online. You can find this by going into settings --> advanced --> Developer Mode = On. Then finding the channel you want it to go to, right click on it and then click on "copy channel ID". 
 
 
 FFMPEG GUIDE:
 
-FFMPEG requires you to have BOTH the library package installed and imported AND the ffmpeg.exe files (found here: https://www.gyan.dev/ffmpeg/builds/ ****get the full)
-in the folder of the libary. I had to drag all three .exe files to DiscordB/venv/Scripts. Make sure you complete this step properly or you will not be able to use the music bot. Please note that you could be held liable for misuse of copyright protected audio. 
+FFMPEG requires you to have BOTH the library package installed and imported AND the ffmpeg.exe files (found here: https://www.gyan.dev/ffmpeg/builds/ ****get the full) Note* You will need 7zip to open the files here
+in the folder of the libary. Inside of the "Bin" folder you should find three .exe files. This is all we need. I had to drag all three .exe files to DiscordB/venv/Scripts. Make sure you complete this step properly or you will not be able to use the music bot. Please note that you could be held liable for misuse of copyright protected audio. 
 
 
 GENERAL USE:
