@@ -1,18 +1,13 @@
 # Imported Libraries #
 import discord
 import requests
-import asyncio
 import yt_dlp as youtube_dl
-import os
-from dotenv import load_dotenv
+import asyncio
 from discord.ext import commands
 # Reassignment Keys #
 
 intents = discord.Intents().all()
 bot = commands.Bot(command_prefix='!', intents=intents)
-
-load_dotenv()
-TOKEN = os.environ.get('D_TOKEN')
 
 # Blank Client Dictionary #
 voice_clients = {}
@@ -68,13 +63,12 @@ async def music(ctx):
 async def wave(ctx, arg):
     await ctx.send(f" extends a friendly and robotic wave at {arg} on behalf of {ctx.author.mention}.")
 
-
 @bot.event
 async def on_ready():
     print("Holy smokes I'm logged in to Discord as {0.user}! Get ready for extreme moderation.".format(bot))
     channel = bot.get_channel(1102412567659425835)
     await channel.send(
-        "Holy freakin' smokes I'm logged in to Discord as {0.user}! Get ready for extreme moderation.".format(bot))
+        "Holy smokes I'm logged in to Discord as {0.user}! Get ready for extreme moderation.".format(bot))
 
 
 @bot.event
@@ -175,4 +169,4 @@ async def on_message(message):
 
 
 # Client Key - DO NOT TOUCH OR EDIT BELOW THIS LINE - #
-bot.run(TOKEN)
+bot.run("MTEwMjQxMzE4OTE2MzAxMjA5Ng.GPC6IF.eeCfrt1-Ne3h7LvBY5srXA1_fcEkFKwXZJfoms")
