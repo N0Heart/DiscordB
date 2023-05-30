@@ -3,6 +3,7 @@
 REQUIRED LIBRARIES:
 
 - Discord (contains basic discord development commands)
+	"pip install discord"
 - Discord.ext (contains the libraries needed to create user commands for the bot to read)
 - Requests (pulls API url from online)
 - asyncio (foundation)
@@ -11,13 +12,14 @@ REQUIRED LIBRARIES:
 - dotenv (loads the environment file needed for os to import the bot token)
 - PyNaCl (foundation)
 - FFmpeg (converts downloaded youtube videos into audio mpeg files for the bot to play // Please see instructions below for FFMPEG installation as it can be tricky)
+	"pip install ffmpeg"
 
 INSTALLATION/USE:
 
 
 SETUP:
 
-1) Create a .env file inside pythonProject2/venv and copy and paste the following:
+1) Create a .env file inside DiscordB/venv and copy and paste the following:
 
 DISCORD_TOKEN=
 
@@ -32,7 +34,7 @@ DISCORD_TOKEN=
 FFMPEG GUIDE:
 
 FFMPEG requires you to have BOTH the library package installed and imported AND the ffmpeg.exe files (found here: https://www.gyan.dev/ffmpeg/builds/ ****get the full)
-installed to the libary. I had to install all three .exe files to pythonProject2/venv/Scripts. Make sure you complete this step properly or you will not be able to use the music bot. Please note that you could be held liable for misuse of copyright protected audio. 
+in the folder of the libary. I had to drag all three .exe files to DiscordB/venv/Scripts. Make sure you complete this step properly or you will not be able to use the music bot. Please note that you could be held liable for misuse of copyright protected audio. 
 
 
 GENERAL USE:
