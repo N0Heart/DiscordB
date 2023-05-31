@@ -2,15 +2,17 @@
 
 REQUIRED LIBRARIES:
 
-- Discord (contains basic discord development commands)
-	"pip install discord"
+- Discord.py (contains basic discord development commands)
+	"pip install discord.py"
 - Discord.ext (contains the libraries needed to create user commands for the bot to read)
 - Requests (pulls API url from online)
 - asyncio (foundation)
 - yt_dlp (downloads the input youtube file)
-- os (imports token file containing YOUR imported discord bot token / instructions below)
-- dotenv (loads the environment file needed for os to import the bot token)
+	"pip install yt-dlp
+- yt_dlp_progress (tracks player's spot in the file)
+	"pip install yt-dlp-progress"
 - PyNaCl (foundation)
+	"pip install PyNaCl"
 - FFmpeg (converts downloaded youtube videos into audio mpeg files for the bot to play // Please see instructions below for FFMPEG installation as it can be tricky)
 	"pip install ffmpeg"
 
@@ -19,16 +21,19 @@ INSTALLATION/USE:
 
 SETUP:
 
-1) Create a .env file inside DiscordB/venv and copy and paste the following:
-
-DISCORD_TOKEN=
-
-2) Copy your unique Discord bot token and paste it after the "=" with no spaces and no quotes
-
-3) Make sure that you do not share this .env file with anyone unless they you want them to be able to manipulate the bot's actions as well. 
-	Note: if you post this file or the token anywhere online, Discord will automatically and immediately change your token and you will have to repeat step 2.
-
-4) On line 75 change "channel = bot.get_channel(xxxxxxxxxxxxxxxxxxxx)" to the channel ID of the chat server that you want the bot to alert when it comes online. You can find this by going into settings --> advanced --> Developer Mode = On. Then finding the channel you want it to go to, right click on it and then click on "copy channel ID". 
+1) You must set up your own bot on the Discord developer portal site. This will genereate you a token in which the bot uses to gain access to the servers that you want it to gain access to. You can follow 
+the first ~4.5 minutes of this video:
+https://www.youtube.com/watch?v=hoDLj0IzZMU&ab_channel=Indently 
+to see how your bot should be set up. Once you have your token pasted, be sure to copy it into a local text file somehwere becuase it will only be displayed on the developer portal once.
+Note: if you post this file or the token anywhere online, Discord will automatically and immediately change your token and you will have to repeat step 1.
+2) On the very last line of the program, replace the "xxx" with your discord token surrounded by "quotes".
+	example: bot.run("YOUR-DISCORD-TOKEN-HERE")
+3) On line 75 change "channel = bot.get_channel(xxxxxxxxxxxxxxxxxxxx)" to the channel ID of the chat server that you want the bot to alert when it comes online. You can find this by going into settings --> advanced --> Developer Mode = On. Then finding the channel you want it to go to, right click on it and then click on "copy channel ID". 
+4) Follow the steps mentioned below about setting up FFMPEG in order to get the music player working. The bot will work regardless of whether or not the music player is working.
+5) You can now test that the bot was set up correctly by running the program. If all goes well, you should get the welcome/greeting message printed in your console as well as in the Discord text channel you copied the ID
+to in step 3.
+6x) It is strongly reccomended that you change the values of my "lists" (tuples) in lines 30 through 38 as these are the words that the bot will be "looking" for in the text channels. You will also want to change the 
+responses that the bot gives by looking for the matching function under the "async def on_message" class and changing the text that is in quotes.
 
 
 FFMPEG GUIDE:
