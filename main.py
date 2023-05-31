@@ -3,16 +3,11 @@ import discord
 import requests
 import asyncio
 import yt_dlp as youtube_dl
-import os
-from dotenv import load_dotenv
 from discord.ext import commands
 # Reassignment Keys #
 
 intents = discord.Intents().all()
 bot = commands.Bot(command_prefix='!', intents=intents)
-
-load_dotenv()
-TOKEN = os.environ.get('D_TOKEN')
 
 # Blank Client Dictionary #
 voice_clients = {}
@@ -175,4 +170,4 @@ async def on_message(message):
 
 
 # Client Key - DO NOT TOUCH OR EDIT BELOW THIS LINE - #
-bot.run(TOKEN)
+bot.run(xxx)
