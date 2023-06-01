@@ -75,6 +75,7 @@ Basic Commands:
 
 - Type "!wave" followed by the @ of the user you would like to wave at.
 
+- Type "!ban" to get a list of words that are not allowed in the server. 
 
 
 
