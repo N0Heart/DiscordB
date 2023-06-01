@@ -4,6 +4,7 @@ import requests
 import yt_dlp as youtube_dl
 import asyncio
 from discord.ext import commands
+
 # Reassignment Keys #
 
 intents = discord.Intents().all()
@@ -21,10 +22,18 @@ ffmpeg_options = {'options': '-vn'}
 
 # Functions #
 # Gets random insult from evilinsult api #
-def get_quote():
+def get_ins():
     response = requests.get("https://evilinsult.com/generate_insult.php?")
     quote = response.text
     return quote
+
+
+def get_comp():
+    response = requests.get("https://complimentr.com/api")
+    data = response.json()
+    compliment = data["compliment"]
+    capitalize = compliment.capitalize()
+    return capitalize + "."
 
 
 typing = ["fast", "speed", "typing", 'keyboard', "switches", "quick", "type"]
@@ -37,11 +46,20 @@ greetings = ["Hi", "hi", "hello", "sup", "whats good", "whats up", "wya"]
 
 doug = ["doug", "thomas", "tommy", "tom", "doog"]
 
+commands = ["!ban - lists banned words", "!comp - generates a random compliment", "!info - lists current server info",
+            "!music - music player instructions", "!wave - wave at a user"]
+
 
 # Client Events #
 @bot.command()
 async def ban(ctx):
     await ctx.send(f"Banned words are: {', '.join(banned)}")
+
+
+@bot.command()
+async def comp(ctx):
+    quote = get_comp()
+    await ctx.send(quote)
 
 
 @bot.command()
@@ -62,6 +80,7 @@ async def music(ctx):
 @bot.command()
 async def wave(ctx, arg):
     await ctx.send(f" extends a friendly and robotic wave at {arg} on behalf of {ctx.author.mention}.")
+
 
 @bot.event
 async def on_ready():
@@ -94,12 +113,12 @@ async def on_message(message):
 
     # Creates a random insult #
     if message.content.lower().startswith("!insult"):
-        quote = get_quote()
+        quote = get_ins()
         await message.channel.send(quote)
     # Banned word action #
     if any(word in message.content.lower() for word in banned):
-        get_quote()
-        s = get_quote()
+        get_ins()
+        s = get_comp()
         await message.channel.send(
             f"{user.mention} {s} It is so important that you understand that this kind of language is absolutely NOT "
             f"allowed in my discord server. Try that again and you will be permanently removed.")
@@ -130,7 +149,7 @@ async def on_message(message):
             voice_client = await message.author.voice.channel.connect()
             voice_clients[voice_client.guild.id] = voice_client
         except:
-            await message.channel.send("Error playing file.")
+            await message.channel.send("There could be an error playing the file. Give me a second...")
 
         try:
             url = message.content.split()[1]
@@ -169,4 +188,4 @@ async def on_message(message):
 
 
 # Client Key - DO NOT TOUCH OR EDIT BELOW THIS LINE - #
-bot.run("MTEwMjQxMzE4OTE2MzAxMjA5Ng.GPC6IF.eeCfrt1-Ne3h7LvBY5srXA1_fcEkFKwXZJfoms")
+bot.run("xxx")
