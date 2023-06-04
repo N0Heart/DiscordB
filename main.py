@@ -63,7 +63,7 @@ async def comp(ctx):
     
 
 @bot.command()
-async def comp(ctx):
+async def ins(ctx):
     quote = get_ins()
     await ctx.send(quote)
 
