@@ -1,4 +1,4 @@
-#       ----------------Discord Bot------------------
+# Discord Bot Instructions
 
 ![dashgiffy](https://github.com/brandonladd/SalesDashboard/assets/124627243/4062a077-8663-49d9-9852-6650f9c1df8f)
 
