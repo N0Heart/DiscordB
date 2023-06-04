@@ -67,6 +67,9 @@ async def ins(ctx):
     quote = get_ins()
     await ctx.send(quote)
 
+@bot.command()
+async def help(ctx):
+    await ctx.send(f"Commands are: {', '.join(commands)}")
 
 @bot.command()
 async def info(ctx):
@@ -117,13 +120,8 @@ async def on_message(message):
             "rate he is going, I suspect he will find a way to convert himself into a half-human half-AI cyborg, "
             "and it's all thanks to the folks that work for the course that taught him how to do it.")
 
-    # Creates a random insult #
-    if message.content.lower().startswith("!insult"):
-        quote = get_ins()
-        await message.channel.send(quote)
     # Banned word action #
     if any(word in message.content.lower() for word in banned):
-        get_ins()
         s = get_comp()
         await message.channel.send(
             f"{user.mention} {s} It is so important that you understand that this kind of language is absolutely NOT "
