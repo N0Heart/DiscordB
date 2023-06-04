@@ -143,7 +143,7 @@ async def on_message(message):
     # Responds to greetings #
     if any(word in message.content.lower() for word in greetings):
         await message.channel.send(
-            "Hello {user.mention]! How are you doing today? Want me to play some music? Just type !play followed by a "
+            "Hello {user.mention}! How are you doing today? Want me to play some music? Just type !play followed by a "
             "space and a YouTube link to the media you want to hear!")
 
     # Music Player #
