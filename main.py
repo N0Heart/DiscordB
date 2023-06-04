@@ -68,7 +68,7 @@ async def ins(ctx):
     await ctx.send(quote)
 
 @bot.command()
-async def options(ctx):
+async def coms(ctx):
     await ctx.send(f"Commands are: {', '.join(commands)}")
 
 @bot.command()
