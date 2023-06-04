@@ -8,17 +8,17 @@ REQUIRED LIBRARIES:
 - terminal use: "pip install discord.py"
 - Discord.ext (comes with Discord.py/contains the libraries needed to create user commands for the bot to read)
 - Requests (pulls API url from online) // v2.30
-- - terminal use: "pip install requests"
+ - terminal use: "pip install requests"
 - asyncio (used for music player) // v3.4.3
-- terminal use:	"pip install asyncio"
+ - terminal use:	"pip install asyncio"
 - yt_dlp (downloads the input youtube file) // v2023.3.4
-- terminal use:	"pip install yt-dlp
+ - terminal use:	"pip install yt-dlp
 - yt_dlp_progress (tracks player's spot in the file) // v0.0.2
-- terminal use:	"pip install yt-dlp-progress"
+ - terminal use:	"pip install yt-dlp-progress"
 - PyNaCl (foundation) // v1.5
-- terminal use:	"pip install PyNaCl"
+ - terminal use:	"pip install PyNaCl"
 - FFmpeg (converts downloaded youtube videos into audio mpeg files for the bot to play // Please see instructions below for FFMPEG installation as it can be tricky) // v1.4
-- terminal use:	"pip install ffmpeg"
+ - terminal use:	"pip install ffmpeg"
 
 
 
