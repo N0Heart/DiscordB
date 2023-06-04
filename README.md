@@ -12,7 +12,7 @@ REQUIRED LIBRARIES:
 - asyncio (used for music player) // v3.4.3
  - terminal use:	"pip install asyncio"
 - yt_dlp (downloads the input youtube file) // v2023.3.4
- - terminal use:	"pip install yt-dlp
+ - terminal use:	"pip install yt-dlp"
 - yt_dlp_progress (tracks player's spot in the file) // v0.0.2
  - terminal use:	"pip install yt-dlp-progress"
 - PyNaCl (foundation) // v1.5
@@ -26,7 +26,8 @@ REQUIRED LIBRARIES:
 
 1) You must set up your own bot on the Discord developer portal site. This will genereate you a token in which the bot uses to gain access to the servers that you want it to gain access to. You can follow 
 the first ~4.5 minutes of this video:
-https://www.youtube.com/watch?v=hoDLj0IzZMU&ab_channel=Indently to see how your bot should be set up. Once you have your token copied, be sure to paste it into a local text file somehwere becuase it will only be displayed on the developer portal once. If you have completed step one correctly, your bot should be displayed as a member of your server, but offline. 
+https://www.youtube.com/watch?v=hoDLj0IzZMU&ab_channel=Indently to see how your bot should be set up. For general purposes, you want your bot to have admin priveleges under the Oath2 tab. 
+Once you have your token copied, be sure to paste it into a local text file somehwere becuase it will only be displayed on the developer portal once. If you have completed step one correctly, your bot should be displayed as a member of your server, but offline. 
 Note: if you post the token anywhere online, Discord will automatically and immediately change your token and you will have to repeat step 1.
 2) On the very last line of the program, replace the "xxx" with your discord token surrounded by "quotes".
 	example: bot.run("YOUR-DISCORD-TOKEN-HERE")
@@ -89,3 +90,8 @@ Note: Sometimes the bot will return an error in the text channel but it should s
 - Type "!ins" to make the bot generate a random insult.
 
 - Type "!comp" to make the bot generate a random compliment.
+
+## Works Cited:
+- How I began learning to set up basic bots: https://www.youtube.com/watch?v=fU-kWx-OYvE&ab_channel=Indently
+- How I learned to actually use the Discord API myself. Almost all of your questions can be answered with the official documentation: https://discordpy.readthedocs.io/en/stable/api.html#message
+
