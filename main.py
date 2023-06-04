@@ -60,6 +60,12 @@ async def ban(ctx):
 async def comp(ctx):
     quote = get_comp()
     await ctx.send(quote)
+    
+
+@bot.command()
+async def comp(ctx):
+    quote = get_ins()
+    await ctx.send(quote)
 
 
 @bot.command()
