@@ -40,7 +40,7 @@ typing = ["fast", "speed", "typing", 'keyboard', "switches", "quick", "type"]
 
 banned = ["frig", "shiz", "sad", "fudge", "gun", "nerd", "geek"]
 
-max = ["max", "weird", "bird", "freak", "mux", "straus", "sam", "frodo"]
+sam = ["sam", "straus", "frodo"]
 
 greetings = ["Hi", "hi", "hello", "sup", "whats good", "whats up", "wya"]
 
@@ -72,7 +72,7 @@ async def coms(ctx):
     await ctx.send(f"Commands are: {', '.join(commands)}")
 
 @bot.command()
-async def info(ctx):
+async def server(ctx):
     await ctx.send(ctx.guild)
     await ctx.send(ctx.author)
     await ctx.send(ctx.message.id)
@@ -94,11 +94,14 @@ async def wave(ctx, arg):
 @bot.event
 async def on_ready():
     print("I'm logged in to Discord as {0.user}! Get ready for extreme moderation.".format(bot))
-    channel = bot.get_channel(1102412567659425835)
-    await channel.send(
+    channel = bot.get_channel(1114719348209233920)
+    if channel is not None:
+        await channel.send(
         "I'm logged in to Discord as {0.user}! Get ready for extreme moderation.".format(bot))
+    else:
+        print("Unable to find the specified channel.")
 
-
+        
 @bot.event
 async def on_message(message):
     # Shortening Directories #
@@ -128,9 +131,9 @@ async def on_message(message):
             f"https://data.typeracer.com/misc/badge?user=slylar45")
 
     # Talks about max #
-    if any(word in message.content.lower() for word in Max):
+    if any(word in message.content.lower() for word in sam):
         await message.channel.send(
-            "Max Straus, otherwise known as the only man able to outrun himself, was last seen in this server over "
+            "Sam Straus, otherwise known as the only man able to outrun himself, was last seen in this server over "
             "two months ago on a cold, March evening. We do not know when he is expected to return, "
             "but our anxiousness towards it is overwhelming.")
 
