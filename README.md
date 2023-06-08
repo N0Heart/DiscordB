@@ -96,7 +96,7 @@ Note: Sometimes the bot will return an error in the text channel but it should s
 
 - Type "!ban" to get a list of words that are not allowed in the server.
 
-- Type "!ins" to make the bot generate a random insult. (Be warned, some of these can get pretty offensive)
+- Type "!ins" to make the bot generate a random insult. (Be warned, some of these can get pretty offensive.)
 
 - Type "!comp" to make the bot generate a random compliment.
 
