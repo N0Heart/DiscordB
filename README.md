@@ -39,15 +39,15 @@
 	- Note: if you post the token anywhere online, Discord will automatically and immediately change your token and you will have to repeat step 1.
 2) On the very last line of the program, replace the "xxx" with your discord token surrounded by "quotes".
 	- example: bot.run("YOUR-DISCORD-TOKEN-HERE")
-3) On line 75 change "channel = bot.get_channel(xxxxxxxxxxxxxxxxxxxx)" to the channel ID of the chat server that you want the bot to alert when it comes online. 
+3) On line 97 change "channel = bot.get_channel(xxxxxxxxxxxxxxxxxxxx)" to the channel ID of the chat server that you want the bot to alert when it comes online. 
  	- You can find this by going into settings --> advanced --> Developer Mode = On. Then finding the channel you want it to go to, right click on it and then click on "copy channel ID". 
 5) Follow the steps mentioned below about setting up FFMPEG in order to get the music player working. The bot will work regardless of whether or not the music player is set up.
 6) You can now test that the bot was set up correctly by running the program. If all goes well, you should get the welcome/greeting message printed in your console as well as in the Discord text channel you copied the ID
 to in step 3. The bot will then come online in your discord server. 
-6x) It is strongly reccomended that you change the values of my lists in lines 30 through 38 as these are the words that the bot will be "looking" for in the text channels. You will also want to change the 
+6x) It is strongly reccomended that you change the values of my lists in lines 39 through 49 as these are the words that the bot will be "looking" for in the text channels. You will also want to change the 
 responses that the bot gives by looking for the matching function under the "async def on_message" class and changing the text that is in quotes.
 	- For example:
-		On lines 123 and 124, change the text within the quotes to be what you want your bot to tell users when they use a word in the "banned" list. You can add or remove as many of these functions as you want, so long as they have a list of words at the top to refer to.
+		On lines 124 and 125, change the text within the quotes to be what you want your bot to tell users when they use a word in the "banned" list. You can add or remove as many of these functions as you want, so long as they have a list of words at the top to refer to.
 7x) There are two preset functions called get_ins and get_comp that will generate a random insult or compliment from online that the bot can then inject into its messages. Feel free to add/remove/change these to pull any other type of information from a third party API. Be sure to follow the documentation that is providided on their website in order to get the text to display properly.
 
 ## FFMPEG GUIDE:
