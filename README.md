@@ -24,13 +24,14 @@
 - FFMPEG .exe files : https://www.gyan.dev/ffmpeg/builds/ (get the "Full" version)
 - A Discord account : https://support.discord.com/hc/en-us/articles/360033931551-Getting-Started
 - A Discord server that you own and manage : https://support.discord.com/hc/en-us/articles/204849977-How-do-I-create-a-server-
-- Running on Windows 10, should work with Mac OS, untested on linux.
+- Running on Windows 10, should work with Mac OS and Linux
 - Running Python 3.10
 
 
 ## SETUP:
 
 1) You must set up your own bot on the Discord developer portal site. This will genereate you a token in which the bot uses to gain access to the servers that you want it to gain access to. 
+	- All of the developer portal changes and inviting the bot to your server can be done from any machine with Discord and a browser, including your phone as long as the link is able to be accessed from it. 
  	- You can follow the first ~4.5 minutes of this video: https://www.youtube.com/watch?v=hoDLj0IzZMU&ab_channel=Indently to see how your bot should be set up. 
  	- For general purposes, you want your bot to have admin priveleges under the Oath2 tab. 
 	- Once you have your token copied, be sure to paste it into a local text file somehwere becuase it will only be displayed on the developer portal once. 
