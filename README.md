@@ -88,7 +88,7 @@ Note: Sometimes the bot will return an error in the text channel but it should s
 
 ## Basic Commands:
 
-- Type "!info" to get information about the server and channel you are in.
+- Type "!server" to get information about the server and channel you are in.
 
 - Type "!music" to get instructions on how to use the music player.
 
@@ -96,7 +96,7 @@ Note: Sometimes the bot will return an error in the text channel but it should s
 
 - Type "!ban" to get a list of words that are not allowed in the server.
 
-- Type "!ins" to make the bot generate a random insult.
+- Type "!ins" to make the bot generate a random insult. (Be warned, some of these can get pretty offensive)
 
 - Type "!comp" to make the bot generate a random compliment.
 
