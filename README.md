@@ -5,10 +5,10 @@
 ## REQUIRED LIBRARIES/Tools:
 
 - Discord.py (contains basic discord development commands) // v2.2.3
-- terminal use: "pip install discord.py"
+	- terminal use: "pip install discord.py"
 - Discord.ext (comes with Discord.py/contains the libraries needed to create user commands for the bot to read)
 - Requests (pulls API url from online) // v2.30
- - terminal use: "pip install requests"
+	- terminal use: "pip install requests"
 - asyncio (used for music player) // v3.4.3
  - terminal use:	"pip install asyncio"
 - yt_dlp (downloads the input youtube file) // v2023.3.4
